@@ -17,6 +17,7 @@ func main() {
 	input := flag.Args()
 
 	if len(input) != 1 {
+		fmt.Println("No input text detected! Pass the full comma-separated CHAR() text as an argument")
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
